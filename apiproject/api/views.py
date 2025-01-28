@@ -4,6 +4,7 @@ from rest_framework.decorators import APIView
 from rest_framework import status
 from rest_framework.authentication import BasicAuthentication,TokenAuthentication
 import logging
+from .models import Student
 
 # Create your views here.
 
@@ -16,9 +17,24 @@ class FirstApiTestView(APIView):
 
         def get(self,request):
             try:
+                data=[]
+
+                # retrieve all objects
+                # students=Student.objects.all()
+
+                # retrieve only selected parts
+                students=Student.objects.filter(age=9)
+
+                for student in students:
+                     data.append({
+                          "name":student.name,
+                          "address":student.address,
+                          "age":student.age,
+                          "mobile_number":student.mobile_number
+                     })
                 msg={
                         "response":"success",
-                        "data":[{"name":"Umesh","address":"Bhaktapur"}]
+                        "data":data
                 }
                 return Response(msg,status=status.HTTP_200_OK)
             except Exception as e:
