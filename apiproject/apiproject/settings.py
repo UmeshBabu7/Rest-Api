@@ -1,6 +1,7 @@
 
 
 from pathlib import Path
+from decouple import config
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -13,9 +14,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-ya3t!d+aebk!y!oqqwjfdk0tgipnct#=drtdi=*mbmzs-t6=w-'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = config('DEBUG', cast=bool)
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = config('ALLOWED_HOSTS', cast=lambda v: [s.strip() for s in v.split(',')])
 
 
 # Application definition
@@ -70,11 +71,11 @@ WSGI_APPLICATION = 'apiproject.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'rest_api',
-        'USER': 'root',
+        'NAME': config('DB_NAME'),
+        'USER': config('DB_USER'),
         'PASSWORD': '',
-        'HOST':'localhost',
-        'PORT':'3306',
+        'HOST':config('DB_HOST'),
+        'PORT':config('DB_PORT')
     }
 }
 
