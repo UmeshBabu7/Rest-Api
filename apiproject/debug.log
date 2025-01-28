@@ -1,0 +1,9 @@
+2025-01-28 15:24:24,155 INFO C:\Users\00\Desktop\Rest-Api\apiproject\api\urls.py changed, reloading. 266 
+2025-01-28 15:24:25,627 INFO Watching for file changes with StatReloader 668 
+2025-01-28 15:24:29,574 INFO C:\Users\00\Desktop\Rest-Api\apiproject\api\urls.py changed, reloading. 266 
+2025-01-28 15:24:30,817 INFO Watching for file changes with StatReloader 668 
+2025-01-28 15:24:37,958 INFO C:\Users\00\Desktop\Rest-Api\apiproject\api\urls.py changed, reloading. 266 
+2025-01-28 15:24:39,120 INFO Watching for file changes with StatReloader 668 
+2025-01-28 15:24:50,741 INFO C:\Users\00\Desktop\Rest-Api\apiproject\api\urls.py changed, reloading. 266 
+2025-01-28 15:24:52,101 INFO Watching for file changes with StatReloader 668 
+2025-01-28 15:25:20,313 INFO "GET /test HTTP/1.1" 200 70 212 

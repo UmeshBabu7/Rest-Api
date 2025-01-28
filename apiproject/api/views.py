@@ -6,3 +6,16 @@ from rest_framework.authentication import BasicAuthentication,TokenAuthenticatio
 
 # Create your views here.
 
+class FirstApiTestView(APIView):
+        
+        authentication_class=[]
+        permission_class=[]
+
+        def get(self,request):
+                msg={
+                        "response":"success",
+                        "data":[{"name":"Umesh","address":"Bhaktapur"}]
+                }
+                return Response(msg,status=status.HTTP_200_OK)
+        
+
