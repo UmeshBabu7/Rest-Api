@@ -1,0 +1,94 @@
+2025-01-28 15:54:56,259 INFO C:\Users\00\Desktop\Rest-Api\apiproject\api\views.py changed, reloading. 266 
+2025-01-28 15:54:56,882 INFO Watching for file changes with StatReloader 668 
+2025-01-28 15:55:36,873 INFO C:\Users\00\Desktop\Rest-Api\apiproject\api\views.py changed, reloading. 266 
+2025-01-28 15:55:38,046 INFO Watching for file changes with StatReloader 668 
+2025-01-28 15:58:42,804 INFO C:\Users\00\Desktop\Rest-Api\apiproject\api\views.py changed, reloading. 266 
+2025-01-28 15:58:43,971 INFO Watching for file changes with StatReloader 668 
+2025-01-28 15:58:47,910 INFO C:\Users\00\Desktop\Rest-Api\apiproject\api\views.py changed, reloading. 266 
+2025-01-28 15:58:49,195 INFO Watching for file changes with StatReloader 668 
+2025-01-28 15:58:53,109 INFO C:\Users\00\Desktop\Rest-Api\apiproject\api\views.py changed, reloading. 266 
+2025-01-28 15:58:54,144 INFO Watching for file changes with StatReloader 668 
+2025-01-28 15:59:00,118 INFO C:\Users\00\Desktop\Rest-Api\apiproject\api\views.py changed, reloading. 266 
+2025-01-28 15:59:01,336 INFO Watching for file changes with StatReloader 668 
+2025-01-28 15:59:04,080 INFO C:\Users\00\Desktop\Rest-Api\apiproject\api\views.py changed, reloading. 266 
+2025-01-28 15:59:05,264 INFO Watching for file changes with StatReloader 668 
+2025-01-28 15:59:13,494 INFO C:\Users\00\Desktop\Rest-Api\apiproject\api\views.py changed, reloading. 266 
+2025-01-28 15:59:14,710 INFO Watching for file changes with StatReloader 668 
+2025-01-28 15:59:18,540 INFO C:\Users\00\Desktop\Rest-Api\apiproject\api\views.py changed, reloading. 266 
+2025-01-28 15:59:19,728 INFO Watching for file changes with StatReloader 668 
+2025-01-28 15:59:36,555 INFO C:\Users\00\Desktop\Rest-Api\apiproject\api\views.py changed, reloading. 266 
+2025-01-28 15:59:37,769 INFO Watching for file changes with StatReloader 668 
+2025-01-28 15:59:42,737 INFO "GET /test HTTP/1.1" 200 282 212 
+2025-01-28 16:00:07,190 INFO C:\Users\00\Desktop\Rest-Api\apiproject\api\views.py changed, reloading. 266 
+2025-01-28 16:00:08,438 INFO Watching for file changes with StatReloader 668 
+2025-01-28 16:00:09,912 INFO "GET /test HTTP/1.1" 200 115 212 
+2025-01-28 16:00:16,662 INFO C:\Users\00\Desktop\Rest-Api\apiproject\api\views.py changed, reloading. 266 
+2025-01-28 16:00:17,887 INFO Watching for file changes with StatReloader 668 
+2025-01-28 16:00:20,662 INFO C:\Users\00\Desktop\Rest-Api\apiproject\api\views.py changed, reloading. 266 
+2025-01-28 16:00:21,814 INFO Watching for file changes with StatReloader 668 
+2025-01-28 16:00:29,050 INFO C:\Users\00\Desktop\Rest-Api\apiproject\api\views.py changed, reloading. 266 
+2025-01-28 16:00:30,485 INFO Watching for file changes with StatReloader 668 
+2025-01-28 16:00:34,004 INFO "GET /test HTTP/1.1" 200 115 212 
+2025-01-28 16:00:34,955 INFO "GET /test HTTP/1.1" 200 115 212 
+2025-01-28 16:00:41,207 INFO C:\Users\00\Desktop\Rest-Api\apiproject\api\views.py changed, reloading. 266 
+2025-01-28 16:00:42,481 INFO Watching for file changes with StatReloader 668 
+2025-01-28 16:00:50,979 INFO C:\Users\00\Desktop\Rest-Api\apiproject\api\views.py changed, reloading. 266 
+2025-01-28 16:00:52,441 INFO Watching for file changes with StatReloader 668 
+2025-01-28 16:00:55,200 INFO name 'man' is not defined 30 
+Traceback (most recent call last):
+  File "C:\Users\00\Desktop\Rest-Api\apiproject\api\views.py", line 22, in get
+    serializer=StudentSerializer(students,many=True)
+                                          ^^^
+NameError: name 'man' is not defined. Did you mean: 'max'?
+2025-01-28 16:00:55,248 WARNING Bad Request: /test 241 
+2025-01-28 16:00:55,248 WARNING "GET /test HTTP/1.1" 400 19 212 
+2025-01-28 16:00:59,894 INFO name 'man' is not defined 30 
+Traceback (most recent call last):
+  File "C:\Users\00\Desktop\Rest-Api\apiproject\api\views.py", line 22, in get
+    serializer=StudentSerializer(students,many=True)
+                                          ^^^
+NameError: name 'man' is not defined. Did you mean: 'max'?
+2025-01-28 16:00:59,894 WARNING Bad Request: /test 241 
+2025-01-28 16:00:59,894 WARNING "GET /test HTTP/1.1" 400 19 212 
+2025-01-28 16:01:21,486 INFO C:\Users\00\Desktop\Rest-Api\apiproject\api\views.py changed, reloading. 266 
+2025-01-28 16:01:22,853 INFO Watching for file changes with StatReloader 668 
+2025-01-28 16:01:36,928 INFO Watching for file changes with StatReloader 668 
+2025-01-28 16:01:38,510 INFO Got AttributeError when attempting to get a value for field `name` on serializer `StudentSerializer`.
+The serializer field might be named incorrectly and not match any attribute or key on the `QuerySet` instance.
+Original exception text was: 'QuerySet' object has no attribute 'name'. 30 
+Traceback (most recent call last):
+  File "C:\Users\00\Desktop\Rest-Api\venv\Lib\site-packages\rest_framework\fields.py", line 437, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\00\Desktop\Rest-Api\venv\Lib\site-packages\rest_framework\fields.py", line 104, in get_attribute
+    instance = getattr(instance, attr)
+               ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'QuerySet' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\00\Desktop\Rest-Api\apiproject\api\views.py", line 26, in get
+    "data":serializer.data
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\00\Desktop\Rest-Api\venv\Lib\site-packages\rest_framework\serializers.py", line 571, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "C:\Users\00\Desktop\Rest-Api\venv\Lib\site-packages\rest_framework\serializers.py", line 249, in data
+    self._data = self.to_representation(self.instance)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\00\Desktop\Rest-Api\venv\Lib\site-packages\rest_framework\serializers.py", line 525, in to_representation
+    attribute = field.get_attribute(instance)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\00\Desktop\Rest-Api\venv\Lib\site-packages\rest_framework\fields.py", line 470, in get_attribute
+    raise type(exc)(msg)
+AttributeError: Got AttributeError when attempting to get a value for field `name` on serializer `StudentSerializer`.
+The serializer field might be named incorrectly and not match any attribute or key on the `QuerySet` instance.
+Original exception text was: 'QuerySet' object has no attribute 'name'.
+2025-01-28 16:01:38,598 WARNING Bad Request: /test 241 
+2025-01-28 16:01:38,598 WARNING "GET /test HTTP/1.1" 400 19 212 
+2025-01-28 16:01:50,981 INFO C:\Users\00\Desktop\Rest-Api\apiproject\api\views.py changed, reloading. 266 
+2025-01-28 16:01:52,281 INFO Watching for file changes with StatReloader 668 
+2025-01-28 16:01:54,111 INFO C:\Users\00\Desktop\Rest-Api\apiproject\api\views.py changed, reloading. 266 
+2025-01-28 16:01:55,170 INFO Watching for file changes with StatReloader 668 
+2025-01-28 16:02:00,369 INFO "GET /test HTTP/1.1" 200 115 212 
