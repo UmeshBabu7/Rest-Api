@@ -32,5 +32,15 @@ class FirstApiTestView(APIView):
                       "response":"fail"
                  }
                  return Response(msg,status=status.HTTP_400_BAD_REQUEST)
+            
+        def post(self,request):
+             serializer=StudentSerializer(data=request.data)
+             if serializer.is_valid():
+                  serializer.save()
+                  msg={
+                       "response":"created"
+                  }
+                  return Response(msg,status=status.HTTP_201_CREATED)
+             
         
 
